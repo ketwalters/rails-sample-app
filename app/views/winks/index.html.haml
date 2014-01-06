@@ -15,7 +15,7 @@
     %td
       = wink.receiver
     %td
-      = link_to 'Destroy', "winks/#{wink.id}", :method => :delete, :data => { confirm: "Really? If you\'re sure..."}
+      = button_to 'Destroy', "winks/#{wink.id}", :method => :delete, :data => { confirm: "Really? If you\'re sure..."}
     %br
 
 %br
