@@ -1,9 +1,11 @@
 RailsSampleApp::Application.routes.draw do
   resources :posts
-  get 'winks' => 'winks#index'
-  get 'winks/new' => 'winks#new'
-  post 'winks' => 'winks#create'
-  delete 'winks/:id' => 'winks#destroy'
+  resources :winks
+  # get 'winks' => 'winks#index'
+  # get 'winks/new' => 'winks#new'
+  # post 'winks' => 'winks#create'
+  # delete 'winks/:id' => 'winks#destroy'
+  # get 'winks/:id' => 'winks#show'
 
 
   # The priority is based upon order of creation:
