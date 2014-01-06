@@ -4855,3 +4855,60 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-06 18:50:43 -0500
 Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started DELETE "/winks/22" for 127.0.0.1 at 2014-01-06 18:52:11 -0500
+Processing by WinksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mubf1PnIUnZfJHEQawErmNkD4lxfQ1dowAT2CjpXu1k=", "id"=>"22"}
+  [1m[35mWink Load (0.1ms)[0m  SELECT "winks".* FROM "winks" WHERE "winks"."id" = ? LIMIT 1  [["id", "22"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM "winks" WHERE "winks"."id" = ?  [["id", 22]]
+  [1m[36m (7.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/winks
+Completed 302 Found in 11ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/winks" for 127.0.0.1 at 2014-01-06 18:52:11 -0500
+Processing by WinksController#index as HTML
+  [1m[35mWink Load (0.2ms)[0m  SELECT "winks".* FROM "winks" 
+  Rendered winks/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-06 18:52:11 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-06 18:52:11 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/winks" for 127.0.0.1 at 2014-01-06 18:55:30 -0500
+Processing by WinksController#index as HTML
+  [1m[36mWink Load (0.5ms)[0m  [1mSELECT "winks".* FROM "winks" [0m
+  Rendered winks/index.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-06 18:55:30 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-06 18:55:30 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/winks/18" for 127.0.0.1 at 2014-01-06 18:55:32 -0500
+Processing by WinksController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[35mWink Load (0.1ms)[0m  SELECT "winks".* FROM "winks" WHERE "winks"."id" = ? LIMIT 1  [["id", "18"]]
+  Rendered winks/show.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-06 18:55:32 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-06 18:55:32 -0500
+Served asset /application.css - 304 Not Modified (0ms)
