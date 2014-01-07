@@ -1,6 +1,6 @@
 RailsSampleApp::Application.routes.draw do
-  resources :posts
-  resources :winks
+  resources: posts
+  resources: winks
   # get 'winks' => 'winks#index'
   # get 'winks/new' => 'winks#new'
   # post 'winks' => 'winks#create'
